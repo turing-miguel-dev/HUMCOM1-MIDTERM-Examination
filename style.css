@@ -1,0 +1,300 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F0F2F5;
+    color: #22252A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    background: #22252A;
+    color: white;
+    text-align: center;
+    padding: 18px 12px 0;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a[aria-current="page"] {
+    background: #4B74E6;
+    color: white;
+}
+
+.header-divider {
+    height: 4px;
+    background: linear-gradient(
+        to right, #4B74E6, #A855F7, #22C55E
+    );
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    min-height: 0;
+}
+
+.card {
+    width: 550px;
+    height: 480px;
+    max-width: 100%;
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000015;
+    overflow-y: auto;
+}
+
+.card h2 {
+    color: #3658B5;
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    font-size: 17px;
+    margin: 16px 0 8px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.card ul {
+    padding-left: 24px;
+    margin: 10px 0 16px;
+}
+
+.card li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.profile-circle {
+    width: 90px;
+    height: 90px;
+    margin: 4px auto 16px;
+    border-radius: 50%;
+    background: #3658B5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.button-link,
+button {
+    display: inline-block;
+    background: #3658B5;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button-link:hover,
+button:hover {
+    background: #263F87;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin: 12px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+caption {
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #CBD0D8;
+    padding: 9px 7px;
+    text-align: left;
+}
+
+thead, tfoot {
+    background: #E8EDF9;
+}
+
+th[scope="row"] {
+    background: #F5F6F8;
+}
+
+figure {
+    margin: 16px 0;
+    padding: 14px;
+    background: #F5F6F8;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+audio {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+fieldset {
+    border: 1px solid #CBD0D8;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #AEB5C0;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #3658B5;
+    outline-offset: 1px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 65px;
+}
+
+footer {
+    background: #22252A;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    flex-shrink: 0;
+    font-size: 13px;
+}
+
+.footer-divider {
+    height: 4px;
+    background: linear-gradient(
+        to right, #4B74E6, #A855F7, #22C55E
+    );
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #F59E0B;
+    outline-offset: 3px;
+}
+@media (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 3px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    main {
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        min-height: 480px;
+        padding: 18px;
+    }
+}

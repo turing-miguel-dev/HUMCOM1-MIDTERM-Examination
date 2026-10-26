@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information and message form for Turing Miguel Jhon's student portfolio">
+    <title>Contact | TURING MIGUEL JHON G.</title>
+     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Student Portfolio</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="media.html">Media</a>
+            <a href="contact.html" aria-current="pag">Contact</a>
+        </nav>
+
+        <div class="header-divider"></div>
+    </header>
+
+    <main>
+          <section class="card">
+            <div class="profile-circle" aria-hidden="true">
+                <img src="" alt="My Logo">
+            </div>
+
+        <section class="card contact-card">
+
+            <h2>Get In Touch</h2>
+
+            <p class="contact-intro">
+                Have a question or a project in mind?
+                Feel free to send me a message.
+            </p>
+
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+
+                <div class="detail">
+                    <h4>Email</h4>
+                    <p>20264581@s.ubaguio.edu</p>
+                </div>
+
+                <div class="detail">
+                    <h4>Address</h4>
+                    <p>
+                        Lower General Luna Road,<br>
+                        Baguio City, Philippines
+                    </p>
+                </div>
+
+                <div class="detail">
+                    <h4>Duty Hours</h4>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+
+            <form class="contact-form"
+                  action="mailto:20264581@s.ubaguio.edu"
+                  method="post"
+                  enctype="text/plain">
+
+                <label for="fullname">Full Name</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="Full Name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="email@example.com"
+                    required
+                >
+
+                <label for="message">Comments / Message</label>
+                <textarea
+                    id="message"
+                    name="Message"
+                    rows="4"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+        </section>
+    </main>
+
+    <div class="footer-divider"></div>
+
+    <footer>
+        <p>&copy; 2026 My Student Portfolio</p>
+        <p>Created with HTML5 and CSS3</p>
+    </footer>
+
+</body>
+</html>
